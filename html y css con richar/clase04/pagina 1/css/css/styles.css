@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 249, 250);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263238;
+}
+
+.logo {
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    display: flex;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #7da894;
+    margin: 15px;
+}
+
+button:hover {
+    background-color: aliceblue;
+}
+
+
+
+.contenedor { 
+    display: grid; 
+    grid-template-columns: 1fr 300px;
+    justify-content: space-around;
+    background-color: #fdfdfd;
+}
+
+.tarjeta-principal img {
+    border-radius: 15px;
+    float: left;
+    width: 340px;
+    height: 340px;
+    margin: 30px;
+    gap: 15px;
+}
+
+blockquote {
+    margin: 35px;
+    padding: 10px;
+    background-color: #e1fbf5;
+    border-left: 4px solid #7da894;
+}
+
+.tarjeta-principal {
+    margin: 60px;
+    flex: 1;
+    align-items: center;
+}
+
+.tarjeta-principal h1 {
+    font-size: 50px;
+}
+
+
+
+.tarjeta-principal span {
+    background-color: #a4ebda;
+    border-radius: 10px;
+}
+
+
+
+.contenedor-botones {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.h2 {
+    margin: 35px;
+}
+
+
+.barra-lateral {
+    border: 1px solid #263238;
+    border-radius: 2px;
+    margin: 15px;
+    display: grid;
+}
+
+
+
+
+.fila {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 24px;
+}
+
+.tarjeta {
+    flex: 1;  
+    border: 1px solid #CFD8DC;
+    border-radius: 8px;
+    padding: 10px;
+    gap: 16px;
+    
+}
+
+.tarjeta h2 {
+    margin-top: 0;
+}
+
+.tarjeta img {
+    width: 450px;
+}
+
+
+.tarjeta span {
+    background-color: #a4ebda;
+    border-radius: 6px;
+}
+
+
+
+.articulos {
+    flex: 2;
+}
+
+.contenido-lateral {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.articulos .tarjeta-principal {
+    margin: 35px;
+}
+
+.articulos .tarjeta-principal img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+.barra-lateral,.contenido,.dato {
+    margin: 35px 35px 0 0;
+    padding: 18px;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.barra-lateral h2,.contenido h2,.dato h2 {
+    margin: 0 0 12px;
+    font-size: 18px;
+}
+
+
+.barra-lateral h2::before { content: "📬 "; }
+.contenido h2::before     { content: "📖 "; }
+.dato h2::before          { content: "💡 "; }
+
+.barra-lateral p {
+    margin: 0 0 14px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #37474f;
+}
+
+.barra-lateral input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CFD8DC;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.barra-lateral button {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2e7d6b;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.barra-lateral button:hover {
+    background-color: #1f5c4f;
+    color: #FFFFFF;
+}
+
+.contenido p {
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #eceff1;
+    font-size: 13px;
+    color: #2e7d6b;
+}
+
+.dato {
+    background-color: #263238;
+    color: #FFFFFF;
+}
+
+.dato p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #CFD8DC;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263238; 
+    color: #FFFFFF; 
+}
+
+.primera-sesion {
+    margin: 25px;
+}
+
+.siguenos {
+    margin: 30px;
+}

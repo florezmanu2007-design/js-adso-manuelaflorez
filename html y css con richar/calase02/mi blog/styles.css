@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #444444;
+    border-color: #ffffff;
+}
+
+/* ENCABEZADO */
+
+header {
+    padding: 20px 30px;
+    border-bottom: 3px solid #643838 ; 
+    overflow: hidden; /
+}
+
+.logo {
+    float: left; /* el logo se va ala izquierda */
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    margin-left: 25px;
+    line-height: 28px; 
+    color: #444444;
+    text-decoration: none;
+}
+
+
+table {
+    width: 100%;
+    padding: 20px;
+}
+
+td {
+    width: 33%;
+    border: 1px;
+    align-items: center;
+}
+
+div .titulo{
+    width: 90%;
+    overflow: hidden;
+    margin: 15px auto;
+    border: 2px solid #444444;
+    border-radius: 20px;
+}
+
+.titulo-pagina {
+    width: 90%;
+    overflow: hidden;
+    margin: 15px auto;
+    border: 2px solid #444444;
+    border-radius: 20px;
+}
+
+.titulo-pagina .imagen1 {
+    float: left;
+}
+
+
+.titulo-pagina h1 {
+    float: right;
+}
+
+.titulo-pagina p {
+    float: right;
+}
+
+.titulo-pagina button {
+    float: right;
+}
+
+
+h2 {
+    text-align: left;
+}

@@ -1,0 +1,32 @@
+.layout {
+    display: grid;
+    grid-template-columns: 240px 1fr; /* columna fija mas flexible */
+    grid-template-rows: auto 1fr auto;  /* cabecera y pie de pagina main flexible */
+    grid-template-areas: "cabecera cabecera" "menu principal" "pie pie"; min-height: 100vh; 
+    gap: 0;
+}
+
+header {
+    grid-area: cabecera;
+    background-color: #263238;
+    color: #ffffff;
+    padding: 16px;
+}
+
+nav { 
+    grid-area: menu; 
+    background-color: #ECEFF1; 
+    padding: 16px; 
+} 
+
+main { 
+    grid-area: principal; 
+    padding: 24px; 
+} 
+
+footer { 
+    grid-area: pie; 
+    background-color: #263238; 
+    color: #FFFFFF; 
+    padding: 12px; 
+}

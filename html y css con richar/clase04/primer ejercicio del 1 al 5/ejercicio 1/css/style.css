@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center; /* centrado en el eje principal (horizontal) */
+    align-items: center; /* centrado el eje cruzado (vertical) */
+    height: 100vh; /* altura completa demla ventana del navegador */
+    background-color: #ece;
+}
+
+h1 {
+    color: #263238;
+}

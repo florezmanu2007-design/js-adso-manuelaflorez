@@ -1,0 +1,279 @@
+/* RESET BASICO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* BLOQUEAR EL SCROLL DE LA PAGINA GENERAL */   
+
+html, body {
+    height: 100%;
+    overflow: hidden; 
+    /* el overflow lo envuelve del alto que le estoyn poniendo y no se sale de ahi */
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.tab-input {
+    display: none; /*  ES PARA QUE NO SE VEA PERO FUNCIONA */
+}
+
+header {
+    position: fixed; /*  va a estar pegado en la parte superior */
+    /* relative queda el hueco en su propia posicion  */
+    /* absolute se sale del flujo normal y los demas pueden ocupar su espacio */
+    /* fixed, por defaul es static */
+    top: 0; /* pegado */
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    z-index: 100;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgb(28, 94, 94);
+}
+
+.logo-area {
+    float: left;
+    height: 100%;
+    display: inline-flex;
+    align-items: center; /*  alinea elementos */
+    gap: 15px; /* es un espacio dentro de los elemntos */ /* remplaza un poco el margin */
+}
+
+.logo-area img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    object-fit: cover; /* cubrir todo el contenedor */ /* meter dentro de */
+    border:  2px solid #ffffff;
+}
+
+.logo-area h1 {
+    font-size: 1.2rem; /* EM Y REM SON MEDIDAS EQUIVALENTES LEM 16PX */
+    font-weight: 600;
+}
+
+.header-info {
+    float: right;
+    height: 100%;
+    line-height: 70px;
+    font-size: 0.9rem;
+    color: rgb(255, 253, 253);
+}
+
+.app-container {
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%
+}
+
+aside {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    background-color: #333333;
+    border-right: 1px solid rgb(28, 94, 94);
+    padding: 20px 0;
+    overflow-y: auto;
+}
+
+/* NAVEGACION */
+aside h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase; /* MAYUSCULAS */ /* LOWERCASE --> MINUSCULAS */
+    letter-spacing: 1PX;
+    color: #ffffff;
+    padding: 0px 20px 10px 20px;
+}
+
+.tab-label {
+    display: block; /* uno debajo del otro */
+    padding: 12px 20px;
+    color: #fbfbfb;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    border-left: 4px solid transparent;
+    transition: all 0.2s ease; /* el tiempo que toma en hacer el cambii con el hover */
+}
+
+.tab-label:hover {
+    background-color: #a7a7a7;
+    color: #000000;
+    border-left: #000000 solid 4px;
+}
+
+/* DERECHA CONTAINER */
+
+main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 260px;
+    right: 0;
+    background-color: #9d9a9a;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.content-panel {
+    display: none;
+    background: #dbd5d5;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px -1px rgb(0, 0, 0);
+    max-width: 900px;
+}
+
+.content-panel h2 {
+    color: #080808;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.content-panel p {
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.content-panel .parrafo p {
+    color: #000000;
+    line-height: 1.6;
+    font-size: 20px;
+    margin-bottom: 15%;
+    margin-top: 80px;
+}
+
+.content-panel img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    float: left;          /* la imagen a la izquierda */
+    margin-right: 20px;   /* espacio entre imagen y texto */
+    border-radius: 5%;
+    border-color: #080808;
+}
+
+.content-panel .recuadros {
+    display: inline-flex;
+}
+
+.content-panel .recuadros img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    float: left;          /* la imagen a la izquierda */
+    margin-right: 20px;   /* espacio entre imagen y texto */
+    border-radius: 5%;
+    border-color: #080808;
+}
+
+.content-panel .recuadros .texto{
+    color: #000000;
+    font-size: 15px;
+    margin-bottom: 15%;
+    margin-top: 30px;
+}
+
+.content-panel .recuadros .descriptivo{
+    color: #000000;
+    font-size: 15px;
+    margin-bottom: 15%;
+    margin-top: 30px;
+}
+
+.content-panel .cuadros {
+    display: inline-flex;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.Nosotros {
+    float: left;
+    height: 100%;
+    display: inline-flex;
+    align-items: center; /*  alinea elementos */
+    gap: 15px; /* es un espacio dentro de los elemntos */ /* remplaza un poco el margin */
+}
+
+.Nosotros img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    object-fit: cover; /* cubrir todo el contenedor */ /* meter dentro de */
+    border:  2px solid #111010;
+    margin-top: 5px;
+}
+
+
+.nuestro-equipo {
+    display: inline-flex;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content-panel .nuestro-equipo h2 {
+    padding: 8px;
+    text-align: left;
+    margin: 8px;
+}
+
+.content-panel .nuestro-equipo .miembro {
+    display: inline-flex;    
+    float: left;
+    height: 100%;
+    display: inline-flex;
+    align-items: center; /*  alinea elementos */
+    gap: 15px;
+}
+
+.content-panel .nuestro-equipo img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    object-fit: cover; /* cubrir todo el contenedor */ /* meter dentro de */
+    border:  2px solid #ffffff;
+}
+
+
+
+/* SELECTORES DE CAMBIO (CAMBIO DE VISTAS) */
+
+/* ESTILO PARA EL BOTON EN EL MENU LATERAL */
+
+#tab-inicio:checked ~ .app-container aside label[for="tab-inicio"],
+#tab-nosotros:checked ~ .app-container aside label[for="tab-nosotros"],
+#tab-servicios:checked ~ .app-container aside label[for="tab-servicios"],
+#tab-productos:checked ~ .app-container aside label[for="tab-productos"],
+#tab-contacto:checked ~ .app-container aside label[for="tab-contacto"]
+{
+    background-color: #333;
+    color: rgb(28, 94, 94);
+    border-left-color: rgb(28, 94, 94);
+}
+
+#tab-inicio:checked ~ .app-container main #panel-inicio,
+#tab-nosotros:checked ~ .app-container main #panel-nosotros,
+#tab-servicios:checked ~ .app-container main #panel-servicios,
+#tab-productos:checked ~ .app-container main #panel-productos,
+#tab-contacto:checked ~ .app-container main #panel-contacto
+{
+    display: block;
+}

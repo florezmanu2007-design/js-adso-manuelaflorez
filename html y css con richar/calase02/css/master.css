@@ -1,0 +1,120 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    color: #444444;
+    border-color: #ffffff;
+}
+
+/* ENCABEZADO */
+
+header {
+    padding: 15px 30px;
+    border-bottom: 2px solid #cccccc ; /* es un borde y tiene 4 posiciones */
+    overflow: hidden; /* para que el encabezado envuelva el menu flotante */
+}
+
+.logo {
+    float: left; /* el logo se va ala izquierda */
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    margin-left: 25px;
+    line-height: 28px; /* alinea el texto del logo y el menu */
+    color: #444444;
+    text-decoration: none; /* elimina la linea del hipervinculo (link) */
+}
+
+.titulo-pagina {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.titulo-pagina h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+/* DOSM COLUMNAS */
+
+.contenedor {
+    margin: 10px 30px 30px 30px;
+    overflow: hidden;
+}
+
+.formulario {
+    float: left;
+    width: 45%; /* ancho */
+    padding: 25px;
+    border: 2px solid #444444;
+    border-radius: 10px; /* redondea los angulos del contenedor  */
+    box-sizing: border-box;/* evita que el padding y el margin aumente el tamaño original */
+}
+
+.infor-contacto {
+    float: right;
+    width: 45%;
+    padding: 25px;
+    border: 2px solid #444444;
+    border-radius: 10px; /* redondea los angulos del contenedor  */
+    box-sizing: border-box;/* evita que el padding y el margin aumente el tamaño original */
+}
+
+/* formularios */
+
+label {
+    display: block; /* ocupa su propia linea */
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid  #444444;
+    border-radius:  6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: solid 2px #444444;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-weight: bold;
+    cursor: pointer; /* muestra la manito al pasar el mouse */
+}
+
+/* pseudoclase: hover -> se activa al pasar el mause encima del elemneto */
+button:hover {
+    background-color: #545454;
+}
+
+.infor-contacto {
+    margin-bottom: 18px;
+}
+
+.mapa {
+    height: 360px;
+    line-height: 360px;
+    margin-top: 20px;
+    border: 2px solid #444444;
+    border-radius: 6px;
+    color: #777777;
+}
+
+footer {
+    clear: both; /* el pie baja  debajo de las columnas */
+    padding: 25px;
+    text-align: center;
+    background-color: #eeeeee;
+    border-top: 2px solid #cccccc;
+    margin-top: 25px;
+}

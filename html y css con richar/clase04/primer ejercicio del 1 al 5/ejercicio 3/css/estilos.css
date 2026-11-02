@@ -1,0 +1,16 @@
+.fila {
+    display: flex;
+    gap: 16px;
+    padding: 24px;
+}
+
+.tarjeta {
+    flex: 1;  /* cada tarjeta creca por igual: mismo ancho */
+    border: 1px solid #CFD8DC;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.tarjeta h2 {
+    margin-top: 0;
+}

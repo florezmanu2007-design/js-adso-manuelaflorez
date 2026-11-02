@@ -1,0 +1,16 @@
+.pagina {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+}
+
+.sidebar {
+    flex: 0 0 240px;  /* no crece no se encoje son fijos */
+    background-color: #eceff1;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.contenido {
+    flex: 1; /* crece y ocupa todo el espacio restante  */
+}

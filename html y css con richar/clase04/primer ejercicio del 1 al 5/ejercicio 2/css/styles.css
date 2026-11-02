@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /* logo a la izquierda, enlaces a la derecha */
+    align-items: center;  /*  todos centrados verticalmente */
+    background-color: #263238;
+    padding: 16px 24px;
+} 
+
+.logo {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar ul {
+    display: flex; /* la lista de enlaces tambien es un flexbox */
+    gap: 20px;  /* separacion  uniforme entre los enlaces, sin margenes */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #f9f9fa;
+    text-decoration: none;
+}

@@ -37,3 +37,71 @@ function formatoTitulo(frase) {
 }
 
 console.log(`🧾 Cliente: ${formatoTitulo(frase)}`)
+
+
+
+// ! Lista de pendientes
+
+// Menú
+
+let menu;
+let tareas = []
+let tareaAgregada;
+let tareaEliminada;
+let posicionTareaEliminada;
+
+do {
+
+    menu = prompt("1- Agregar una tarea\n2- Ver lista de tareas\n3- Eliminar una tarea\n4- Deja vacio para salir")
+
+    if (menu){
+
+        switch (Number(menu)){
+        
+            case 1:
+
+                tareaAgregada = prompt("Ingresa el nombre de la tarea")
+
+                if (tareas.includes(tareaAgregada)){
+
+                    alert("Esa tarea ya existe")
+
+                }else{
+
+                    tareas.push(tareaAgregada)
+
+                }
+
+                break
+
+            case 2:
+
+                console.table(tareas)
+
+                break
+
+            case 3:
+
+                tareaEliminada = prompt("Ingresa el nombre de la tarea que desea eliminar")
+
+                posicionTareaEliminada = tareas.indexOf(tareaEliminada)
+                
+                if (posicionTareaEliminada === -1){
+
+                    alert("Esa tarea no existe")
+
+                }else{
+
+                    tareas.splice(posicionTareaEliminada, 1)
+
+                }
+
+                break
+
+            default:
+                
+                alert("Opción no válida, intenta nuevamente")
+        }
+
+    }   
+} while (menu)

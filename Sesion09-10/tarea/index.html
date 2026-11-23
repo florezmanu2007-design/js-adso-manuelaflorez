@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="contenedor">
+    <!-- ZONA DE CATÁLOGO -->
+    <section class="panel">
+      <h1>Tienda Tech</h1>
+      <p class="subtitulo">Selecciona los productos que deseas agregar al carrito</p>
+      <div id="listaProductos" class="grid-productos"></div>
+    </section>
+
+    <!-- ZONA DE CARRITO -->
+    <section class="panel">
+      <h2>Tu Carrito</h2>
+      <ul id="listaCarrito" class="lista-carrito"></ul>
+
+      <div class="total-box">
+        <span>Total a pagar:</span>
+        <strong id="totalCarrito">$0</strong>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
